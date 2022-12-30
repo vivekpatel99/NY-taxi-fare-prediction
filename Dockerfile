@@ -2,8 +2,8 @@
 #FROM tensorflow/tensorflow:nightly-gpu-jupyter
 FROM tensorflow/tensorflow:latest-gpu-jupyter
 WORKDIR .
-
-RUN pip install -U pandas autopep8 scikit-learn keras_tuner numpy opendatasets xgboost
+RUN pip install --upgrade pip
+RUN pip install -U pandas autopep8 scikit-learn keras_tuner numpy opendatasets xgboost seaborn plotly
 
 EXPOSE 8888
 
